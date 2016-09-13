@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'coderuse';
+  src:
+    url('fonts/coderuse.ttf?gceu0f') format('truetype'),
+    url('fonts/coderuse.woff?gceu0f') format('woff'),
+    url('fonts/coderuse.svg?gceu0f#coderuse') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.58;
+  font-style: normal;
+  letter-spacing: -.003em;
+  color: rgba(0, 0, 0, .8);
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+  font-size: 30px;
+}
+a:visited {
+  color: #464646;
+}
+
+[class^="coderuse-"], [class*=" coderuse-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'coderuse' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.coderuse-twitter:before {
+  content: "\f099";
+}
+.coderuse-github-alt:before {
+  content: "\f113";
+}
+
+.header {
+  width: 22.5em;
+  height: 15.75em;
+  position: absolute;
+  /*it can be fixed too*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -.004em;
+  }
+  .header {
+    padding: .8em;
+  }
+}
+
